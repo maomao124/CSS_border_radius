@@ -1,0 +1,58 @@
+/*
+  Project name(项目名称)：CSS_border_radius 
+  File name(文件名): t
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/4 
+  Time(创建时间)： 20:47
+  Version(版本): 1.0
+  Description(描述)：
+  border-top-left-radius：为元素左上角设置圆角效果；
+border-top-right-radius：为元素右上角设置圆角效果；
+border-bottom-right-radius：为元素右下角设置圆角效果；
+border-bottom-left-radius：为元素左下角设置圆角效果；
+border-radius：上面四个属性的简写形式，可以同时为元素的四个角设置圆角效果。
+值	描述
+length	通过数值加单位的形式定义圆角的形状
+percentage	以百分比的形式定义圆角的形状
+
+
+border-radius
+border-radius 属性是 border-top-left-radius、border-top-right-radius、border-bottom-right-radius、
+border-bottom-left-radius 四个属性的简写形式，使用 border-radius 可以同时设置四个 border-*-radius 属性。border-radius 属性的格式如下：
+border-radius：[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?
+语法说明如下：
+border-radius 属性可以接收两组参数，参数之间使用斜杠/进行分隔，每组参数都允许设置 1~4 个参数值，其中第一组参数代表圆角水平方向上的半径或半轴
+，第二组参数代表圆角垂直方向上的半径或半轴，如果省略第二组参数的值，那么该组参数将直接沿用第一组参数的值。
+第一组参数中，如果提供全部的四个参数，那么将按照上左 top-left、上右 top-right、下右 bottom-right、下左 bottom-left 的顺序作用于元素的四个角；
+如果提供三个参数，那么第一个参数将作用于元素的左上角 top-left，第二个参数将作用于元素的右上角 top-right 和左下角 bottom-left，
+第三个参数将作用于元素的右下角 bottom-right；如果提供两个参数，那么第一个参数将作用于元素的左上角 top-left 和右下角 bottom-right，
+第二个参数将作用于元素的右上角 top-right 和左下角 bottom-left；如果只提供一个参数，那么该参数将同时作用于元素的四个角。
+第二组参数同样遵循第一组参数的规律，只是作用的方向不同。
+ */
+
+div {
+    width: 350px;
+    height: 100px;
+    padding: 15px 0px 0px 25px;
+}
+
+.one {
+    border-top-left-radius: 2em 0.5em;
+    border-top-right-radius: 1em 3em;
+    border-bottom-right-radius: 4em 0.5em;
+    border-bottom-left-radius: 1em 3em;
+    background-color: #CCC;
+    margin-bottom: 10px;
+}
+
+.two {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    background-color: #888;
+}
+    
+    
