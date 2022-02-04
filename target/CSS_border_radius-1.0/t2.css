@@ -1,0 +1,61 @@
+/*
+  Project name(项目名称)：CSS_border_radius 
+  File name(文件名): t2
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/4 
+  Time(创建时间)： 21:36
+  Version(版本): 1.0
+  Description(描述)： 无
+ */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    width: 200px;
+    float: left;
+    background: #bbb;
+}
+
+h2 {
+    clear: left;
+}
+
+.test .one {
+    border-radius: 10px;
+}
+
+.test .two {
+    border-radius: 10px 20px;
+}
+
+.test .three {
+    border-radius: 10px 20px 30px;
+}
+
+.test .four {
+    border-radius: 10px 20px 30px 40px;
+}
+
+.test2 .one {
+    border-radius: 10px/5px;
+}
+
+.test2 .two {
+    border-radius: 10px 20px/5px 10px;
+}
+
+.test2 .three {
+    border-radius: 10px 20px 30px/5px 10px 15px;
+}
+
+.test2 .four {
+    border-radius: 10px 20px 30px 40px/5px 10px 15px 20px;
+}
